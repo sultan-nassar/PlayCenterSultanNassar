@@ -1,4 +1,4 @@
-*****Play Center Sultan Nassar on WPF*****
+**Play Center Sultan Nassar on WPF**</br></hr>
 Welcome to our comprehensive Game Center Project on Windows Presentation Foundation (WPF)! This project comprises various mini-projects, including a robust User Management System, a useful To-Do list, and several engaging games, as well as a currency converter program.
 
 **Home Page**
