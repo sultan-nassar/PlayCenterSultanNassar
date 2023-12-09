@@ -15,26 +15,25 @@ This system is responsible for the creation, handling, and management of user da
 #### 2. To-Do List
 A practical To-Do List project, which allows users to add, modify and complete tasks. This tool is designed to help manage our time and tasks more effectively.
 
-#### 3. Tic Tac Toe Game
-An exciting and classic game of Tic Tac Toe. Play against computer intelligence and test your strategic skills.
-
-#### 4. Flappy Bird Game
-An addictive and thrilling remake of the famous Flappy Bird Game. Navigate your bird through the perilous tunnels and set a high score.
-
-#### 5. Space Game
-Immerse yourself in a new Space adventure. Avoid all the alians spaceships and break records.
-
-#### 6. Currency Converter Program
+#### 3. Currency Converter Program
 A handy tool that efficiently converts between multiple world currencies in real-time. Essential for users who deal with global currencies.
 
-#### 7. Memory Game
-Another game to test your memory. Match pairs of cards with similar images, challenge your friends, and see who has the better memory.
+#### 4. Car Game
+An addictive and thrilling remake of the famous Flappy Bird Game. Navigate your bird through the perilous tunnels and set a high score.
 
-#### 8. Simon Game
-Test your memory with our version of the Simon Game! Remember the sequence of lights, and see how far you can go.
+#### 5. Tic Tac Toe Game
+An exciting and classic game of Tic Tac Toe. Play against computer intelligence and test your strategic skills.
 
-### 9. Shooting Range Game
-Enhance your precision and focus with our Shooting Range Game. Aim perfectly to hit the targets and earn maximum points. 
+#### 6. Calculator
+An addictive and thrilling remake of the famous Flappy Bird Game. Navigate your bird through the perilous tunnels and set a high score.
+
+#### 7. Snake Game
+Immerse yourself in a new Space adventure. Avoid all the alians spaceships and break records.
+
+#### 8. Tertris Game
+A handy tool that efficiently converts between multiple world currencies in real-time. Essential for users who deal with global currencies.
+
+
 
 
 
