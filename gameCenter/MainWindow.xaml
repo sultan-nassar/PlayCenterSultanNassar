@@ -5,60 +5,149 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gameCenter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1400">
-    <Grid>
+        Title="MainWindow" Height="400" Width="800" ResizeMode="CanResizeWithGrip" >
+
+
+    <Grid >
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#D9EAD3" Offset="0"/>
+                <GradientStop Color="Beige" Offset="3"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2.5*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*"></RowDefinition>
             <RowDefinition Height="0.5*"></RowDefinition>
-            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2.2*"></RowDefinition>
             <RowDefinition Height="0.5*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Label x:Name="addUserTitle"
-               Grid.Column="0"
-               Grid.Row="0"
-               Grid.ColumnSpan="3"
-               VerticalContentAlignment="Center"
-               Content="Game center" 
-               HorizontalContentAlignment="Center" 
-               Background="AliceBlue"
-               FontWeight="Bold"
-               FontSize="60"
-        />
+        <Grid Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="3" Background="Beige">
+            <Viewbox  >
+                <WrapPanel >
+                    <Grid 
+       Grid.Column="0"
+       Grid.Row="0"
+       >
+                        <Image
+                x:Name="UserAvatar"
+                Source="/Images/account.png"
+                Width="50"
+                Height="50"
+                MouseLeftButtonUp="Avatar_MouseLeftButtonUp"
+                MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave"
+                HorizontalAlignment="Left"
+                Margin="10,0,-80,0"
 
-        <Label 
+                    />
+                    </Grid>
+                    <Grid >
+                        <Label x:Name="TitleLabel"
+           Content="Game Center" 
+           Background="Beige"
+           FontFamily="Arial Black" 
+           FontSize="30"
+           HorizontalContentAlignment="Center"
+           VerticalContentAlignment="Center"
+            Margin="290,0,90,0"
+    />
+                    </Grid>
+                    <Grid>
+                        <Label 
+    x:Name="DateLabel"
+    Content="The current Date and time"
+    Background="Beige"
+    HorizontalContentAlignment="Right"
+    VerticalContentAlignment="Center" 
+    FontFamily="Arial Black" 
+    FontSize="10"  Margin="0,0,20,0"
+/>
+                    </Grid>
+                </WrapPanel>
+            </Viewbox>
+        </Grid>
+        <Viewbox  Grid.Column="1" Grid.Row="1">
+            <Label 
             x:Name="GameText"
             Content="please pick a game" 
             Grid.Row="1" 
             Grid.Column="1" 
             VerticalAlignment="Center" 
             HorizontalAlignment="Center"
-            FontSize="26"
+            FontSize="5"
+            FontWeight="Bold"
         />
-
-        <WrapPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image x:Name="Image1" Source="/Images/square1.jpeg" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image1_MouseLeftButtonUp"/>
-            <Image x:Name="Image2" Source="/Images/square2.png" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave"/>
-            <Image x:Name="Image3" Source="/Images/square1.jpeg" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave"/>
-            <Image x:Name="Image4" Source="/Images/square2.png" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave"/>
-            <Image x:Name="Image5" Source="/Images/square1.jpeg" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave"/>
-            <Image x:Name="Image6" Source="/Images/square2.png" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave"/>
-        </WrapPanel>
-
-        <Label x:Name="Footer"
-               Grid.Column="0"
-               Grid.Row="3"
-               Grid.ColumnSpan="3"
-               VerticalContentAlignment="Center"
-               HorizontalContentAlignment="Center" 
-               Background="AliceBlue"
-               FontWeight="Bold"
-               FontSize="23"
-        />
+        </Viewbox>
+        <Viewbox Grid.Row="2" Grid.Column="1"  Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <WrapPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="456" Width="612" >
+                <Border  BorderThickness="2" CornerRadius="50" Margin="15" Background="White">
+                    <Image x:Name="Image1" Source="/Images/account1.png"  Width="85" Margin="15" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image1_MouseLeftButtonUp" />
+                </Border>
+                <Border  BorderThickness="2" CornerRadius="50" Margin="15" Background="White">
+                    <Image x:Name="Image2" Source="/Images/todo1.png" Width="85" Margin="15" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image2_MouseLeftButtonUp"/>
+                </Border>
+                <Border  BorderThickness="2" CornerRadius="50" Margin="15" Background="White">
+                    <Image x:Name="Image3" Source="/Images/currency2.png" Width="85" Margin="15" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image3_MouseLeftButtonUp"/>
+                </Border>
+                <Border  BorderThickness="2" CornerRadius="50" Margin="15" Background="White">
+                    <Image x:Name="Image4" Source="/Images/car.png" Width="85" Margin="15" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image4_MouseLeftButtonUp"/>
+                </Border>
+                <Border  BorderThickness="2" CornerRadius="50" Margin="15" Background="White">
+                    <Image x:Name="Image5" Source="/Images/tic-tac-toe.png" Width="85" Margin="15" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image5_MouseLeftButtonUp"/>
+                </Border>
+                <Border  BorderThickness="2" CornerRadius="50" Margin="15" Background="White">
+                    <Image x:Name="Image6" Source="/Images/calculator 2.png" Width="85" Margin="15" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image6_MouseLeftButtonUp"/>
+                </Border>
+                <Border  BorderThickness="2" CornerRadius="50" Margin="15" Background="White">
+                    <Image x:Name="Image7" Source="/Images/snake.png" Width="85" Margin="15" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image7_MouseLeftButtonUp"/>
+                </Border>
+                <Border  BorderThickness="2" CornerRadius="50" Margin="15" Background="White">
+                    <Image x:Name="Image8" Source="/Images/Tetris.png" Width="85" Margin="15" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image8_MouseLeftButtonUp"/>
+                </Border>
+            </WrapPanel>
+        </Viewbox>
+        <Grid
+            Grid.Row="3"
+            Grid.ColumnSpan="3"
+            Background="Beige">
+            <Viewbox  Grid.Column="0" Grid.Row="3">
+                <WrapPanel 
+            x:Name="Footer"
+                Background="Beige"
+            HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+            >
+                    <Image
+Source="\Images\.netIcon.png"
+Width="10"
+Height="10"
+Margin="10,4,0,10"
+/>
+                    <Image
+Source="\Images\apiIcon.png"
+Width="10"
+Height="10"
+                Margin="10,4,0,10"
+/>
+                    <Image
+Source="\Images\csharp.png"
+Width="10"
+Height="10"
+                Margin="10,4,0,10"
+/>
+                    <Image
+Source="\Images\jsonIcon.png"
+Width="10"
+Height="10"
+                Margin="10,4,10,10"
+/>
+                </WrapPanel>
+            </Viewbox>
+        </Grid>
     </Grid>
 </Window>

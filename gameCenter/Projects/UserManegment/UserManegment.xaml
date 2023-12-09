@@ -1,0 +1,206 @@
+﻿<Window x:Class="gameCenter.Projects.UserManegment.UserManegment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gameCenter.Projects.UserManegment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1400" ResizeMode="CanResizeWithGrip">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="mainContainer" Grid.Row="0" Background="#D9EAD3">
+            <Label x:Name="MainTitle"
+                Content="Users Manager" 
+                HorizontalContentAlignment="Center" 
+                Background="Beige"
+                FontWeight="Bold"
+                FontSize="24"
+            />
+            <StackPanel x:Name="addUserPanel" Width="300" >
+                <StackPanel x:Name="userNamePanel">
+                    <Label Content="User Name"
+                           FontSize="14"
+                           FontWeight="Bold"
+                           
+                           
+                           />
+                    <TextBox 
+                        x:Name="UserName" 
+                        BorderThickness="1,1,1,2"
+                        Height="25" LostFocus="On_UserName_LostFocus"
+                        
+                    >
+                        <TextBox.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                </StackPanel>
+                <StackPanel x:Name="userEmailPanel" Margin="0,10,0,0">
+                    <Label Content="User Email"
+                           FontSize="14"
+                           FontWeight="Bold"
+                           
+                           />
+                    <TextBox 
+                        x:Name="UserEmail" 
+                        BorderThickness="1,1,1,2" 
+                        Height="25"
+                        LostFocus="On_UserEmail_LostFocus"
+                  
+                        
+
+                        >
+                        
+                        <TextBox.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                </StackPanel>
+                <WrapPanel HorizontalAlignment="Center">
+                    <Button 
+                        x:Name="AddButton"
+                        Content="Add"
+                        FontSize="12"
+                        FontWeight="Bold"
+                        Width="80"
+                        Height="30"
+                        BorderThickness="0"
+                        Background= "#FFB3D2CC"
+                        Margin="10,30,20,30" Click="On_Add_Button_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button 
+                        x:Name="RemoveButton"
+                        Content="Remove"
+                        FontSize="12"
+                        FontWeight="Bold"
+                        BorderThickness="0"
+                        Width="80"
+                        Margin="0,30,0,30" Click="On_Remove_Button_Click" Background="#FFD26B6B">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button 
+                        x:Name="UpdateButton"
+                        Content="Update"
+                        FontSize="12"
+                        FontWeight="Bold"
+                        BorderThickness="0"
+                        Width="80"
+                        Margin="20,30,0,30" Background="#FF849EB5" Click="On_Update_Button_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </WrapPanel>
+                <WrapPanel HorizontalAlignment="Center">
+                    <Button 
+                        x:Name="LogButton"
+                        Content="Login/out"
+                        FontSize="12"
+                        FontWeight="Bold"
+                        BorderThickness="0"
+                        Width="80"
+                        Margin="10,0,20,30" Background="#FF7FB880" Click="On_ToggleUserLog_Button_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button 
+                        x:Name="FreezeButton"
+                        Content="Freeze/Un-Freeze"
+                        FontSize="12"
+                        FontWeight="Bold"
+                        Height="30"
+                        BorderThickness="0"
+                        Background= "#FFD7BABA"
+                        Margin="0,0,0,30" Click="On_ToogleFreezeUser_Button_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </WrapPanel>
+            </StackPanel>
+            <StackPanel x:Name="usersListContainer" Background="Beige">
+                <Label x:Name="usersListTitle"
+                    Content="Users List" 
+                    HorizontalContentAlignment="Center" 
+                    Background="Beige"
+                    FontWeight="Bold"
+                    FontSize="24"
+                />
+                <DataGrid 
+                    x:Name="UsersDataGrid"
+                    HorizontalAlignment="Center"
+                    Margin="0,25,0,30"
+                    MinColumnWidth="100"
+                    CanUserAddRows="False"
+                    HeadersVisibility="Column"
+                    ScrollViewer.CanContentScroll="True"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    MaxHeight="200" 
+                    SelectionChanged="On_UsersDataGrid_SelectionChanged"
+                    IsReadOnly="True"
+                >
+
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#FF8FB084"/>
+                            <Setter Property="Foreground" Value="Beige"/>
+                            <Setter Property="FontSize" Value="18"/>
+                            <Setter Property="FontWeight" Value="Medium"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            <Setter Property="MinHeight" Value="30"/>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+                    
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="Beige"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="FontSize" Value="13"/>
+                            <Setter Property="FontWeight" Value="Medium"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            <Setter Property="MinHeight" Value="30"/>
+                        </Style>
+                    </DataGrid.CellStyle>
+                    
+                   
+                </DataGrid>
+            </StackPanel>
+        </StackPanel>
+        <Label 
+            x:Name="Footer"
+            VerticalContentAlignment="Center"
+            Grid.Row="1"
+            Content="All Rights Reserved (C)" 
+            HorizontalContentAlignment="Center" 
+            Background="Beige"
+            FontWeight="Bold"
+            FontSize="12"
+            />
+
+
+    </Grid>
+</Window>

@@ -8,13 +8,123 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\square1.jpeg" />
-    <None Remove="Images\square2.png" />
+    <Compile Remove="Projects\Tetris\Assets - Copy\**" />
+    <EmbeddedResource Remove="Projects\Tetris\Assets - Copy\**" />
+    <None Remove="Projects\Tetris\Assets - Copy\**" />
+    <Page Remove="Projects\Tetris\Assets - Copy\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\square1.jpeg" />
-    <Resource Include="Images\square2.png" />
+    <None Remove="Images\.netIcon.png" />
+    <None Remove="Images\account.png" />
+    <None Remove="Images\account1.png" />
+    <None Remove="Images\apiIcon.png" />
+    <None Remove="Images\C#logo.png" />
+    <None Remove="Images\calculator 2.png" />
+    <None Remove="Images\calculator.png" />
+    <None Remove="Images\car game.png" />
+    <None Remove="Images\car.png" />
+    <None Remove="Images\copy right.png" />
+    <None Remove="Images\csharp.png" />
+    <None Remove="Images\currency2.png" />
+    <None Remove="Images\Images.rar" />
+    <None Remove="Images\jet shooter.png" />
+    <None Remove="Images\jet shooter1.png" />
+    <None Remove="Images\jsonIcon.png" />
+    <None Remove="Images\snake 1.png" />
+    <None Remove="Images\snake 2.png" />
+    <None Remove="Images\snake.png" />
+    <None Remove="Images\square1.jpeg" />
+    <None Remove="Images\square2.png" />
+    <None Remove="Images\Tetris.png" />
+    <None Remove="Images\Tic-tac-toe.png" />
+    <None Remove="Images\todo1.png" />
+    <None Remove="Projects\CarGame\Assets\Bomb.png" />
+    <None Remove="Projects\CarGame\Assets\Car.png" />
+    <None Remove="Projects\CarGame\Assets\natureRoad.mp4" />
+    <None Remove="Projects\Snake\Assets\.png" />
+    <None Remove="Projects\Snake\Assets\Body.png" />
+    <None Remove="Projects\Snake\Assets\Body2.png" />
+    <None Remove="Projects\Snake\Assets\DeadBody.png" />
+    <None Remove="Projects\Snake\Assets\DeadHead.png" />
+    <None Remove="Projects\Snake\Assets\Empty.png" />
+    <None Remove="Projects\Snake\Assets\Food.png" />
+    <None Remove="Projects\Snake\Assets\Food2.png" />
+    <None Remove="Projects\Snake\Assets\Head.png" />
+    <None Remove="Projects\Snake\Assets\icon.ico" />
+    <None Remove="Projects\Tetris\Assets\Background.png" />
+    <None Remove="Projects\Tetris\Assets\Block-Empty.png" />
+    <None Remove="Projects\Tetris\Assets\Block-I.png" />
+    <None Remove="Projects\Tetris\Assets\Block-J.png" />
+    <None Remove="Projects\Tetris\Assets\Block-L.png" />
+    <None Remove="Projects\Tetris\Assets\Block-O.png" />
+    <None Remove="Projects\Tetris\Assets\Block-S.png" />
+    <None Remove="Projects\Tetris\Assets\Block-T.png" />
+    <None Remove="Projects\Tetris\Assets\Block-Z.png" />
+    <None Remove="Projects\Tetris\Assets\Icon.ico" />
+    <None Remove="Projects\Tetris\Assets\TileBlue.png" />
+    <None Remove="Projects\Tetris\Assets\TileCyan.png" />
+    <None Remove="Projects\Tetris\Assets\TileEmpty.png" />
+    <None Remove="Projects\Tetris\Assets\TileGreen.png" />
+    <None Remove="Projects\Tetris\Assets\TileOrange.png" />
+    <None Remove="Projects\Tetris\Assets\TilePurple.png" />
+    <None Remove="Projects\Tetris\Assets\TileRed.png" />
+    <None Remove="Projects\Tetris\Assets\TileYellow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\.netIcon.png" />
+    <Resource Include="Images\account.png" />
+    <Resource Include="Images\apiIcon.png" />
+    <Resource Include="Images\csharp.png" />
+    <Resource Include="Projects\CarGame\Assets\Bomb.png" />
+    <Resource Include="Projects\CarGame\Assets\Car.png" />
+    <Content Include="Projects\CarGame\Assets\natureRoad.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\jsonIcon.png" />
+    <Resource Include="Projects\Tetris\Assets\Block-T.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\account1.png" />
+    <Resource Include="Images\calculator 2.png" />
+    <Resource Include="Images\calculator.png" />
+    <Resource Include="Images\car game.png" />
+    <Resource Include="Images\car.png" />
+    <Resource Include="Images\copy right.png" />
+    <Resource Include="Images\currency2.png" />
+    <Resource Include="Images\Images.rar" />
+    <Resource Include="Images\jet shooter.png" />
+    <Resource Include="Images\jet shooter1.png" />
+    <Resource Include="Images\snake.png" />
+    <Resource Include="Images\Tetris.png" />
+    <Resource Include="Images\Tic-tac-toe.png" />
+    <Resource Include="Images\todo1.png" />
+    <Resource Include="Projects\Snake\Assets\Body.png" />
+    <Resource Include="Projects\Snake\Assets\DeadBody.png" />
+    <Resource Include="Projects\Snake\Assets\DeadHead.png" />
+    <Resource Include="Projects\Snake\Assets\Empty.png" />
+    <Resource Include="Projects\Snake\Assets\Food.png" />
+    <Resource Include="Projects\Snake\Assets\Head.png" />
+    <Resource Include="Projects\Snake\Assets\icon.ico" />
+    <Resource Include="Projects\Tetris\Assets\Background.png" />
+    <Resource Include="Projects\Tetris\Assets\Block-Empty.png" />
+    <Resource Include="Projects\Tetris\Assets\Block-I.png" />
+    <Resource Include="Projects\Tetris\Assets\Block-J.png" />
+    <Resource Include="Projects\Tetris\Assets\Block-L.png" />
+    <Resource Include="Projects\Tetris\Assets\Block-O.png" />
+    <Resource Include="Projects\Tetris\Assets\Block-S.png" />
+    <Resource Include="Projects\Tetris\Assets\Block-Z.png" />
+    <Resource Include="Projects\Tetris\Assets\Icon.ico" />
+    <Resource Include="Projects\Tetris\Assets\TileBlue.png" />
+    <Resource Include="Projects\Tetris\Assets\TileCyan.png" />
+    <Resource Include="Projects\Tetris\Assets\TileEmpty.png" />
+    <Resource Include="Projects\Tetris\Assets\TileGreen.png" />
+    <Resource Include="Projects\Tetris\Assets\TileOrange.png" />
+    <Resource Include="Projects\Tetris\Assets\TilePurple.png" />
+    <Resource Include="Projects\Tetris\Assets\TileRed.png" />
+    <Resource Include="Projects\Tetris\Assets\TileYellow.png" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,88 @@
+﻿<Window x:Class="GameCenter.Projects.CarGame.CarGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameCenter.Projects.CarGame"
+        mc:Ignorable="d"
+        Title="CarGame" Height="520" Width="1310"
+>
+    <Viewbox Stretch="UniformToFill">
+
+        <Grid>
+            <MediaElement x:Name="backgroundVideo" LoadedBehavior="Manual" UnloadedBehavior="Stop" MediaEnded="MediaElement_MediaEnded" MediaFailed="MediaElement_MediaFailed"/>
+
+            <Canvas x:Name="gameCanvas">
+
+                <Image Name="playerCarImage" HorizontalAlignment="Center" VerticalAlignment="Top" Height="140" Width="200" Source="Assets\Car.png"/>
+                <TextBlock x:Name="scoreTextBlock" HorizontalAlignment="Right" VerticalAlignment="Top" Text="Score: 0" Foreground="Black" FontSize="40"/>
+            </Canvas>
+
+
+
+            <Border x:Name="StartScreenOverlay" Background="#FF3A3838"  Visibility="Visible" Opacity="1" />
+            <TextBlock x:Name="PressAnyKeyText"
+                   Text="Press any key to start the game" 
+                   FontSize="24" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   Foreground="Silver" 
+                   FontWeight="Bold" 
+                   
+                   Visibility="Visible" />
+
+            <TextBlock x:Name="CountdownText"
+           FontSize="48"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Center"
+           Foreground="White"
+           FontWeight="Bold"
+           Visibility="Visible"
+       />
+            <Grid x:Name="GameOverMenu"
+              Background="#cc000000"
+             
+              Visibility="Hidden"
+              >
+                <StackPanel HorizontalAlignment="Center"
+                          VerticalAlignment="Top">
+                    <TextBlock Text="Game Over"
+                           FontSize="58"
+                           TextAlignment="Center"
+                           Foreground="Silver"
+                           />
+
+                    <TextBlock x:Name="FinalScoreText"
+                           Text="Score: "
+                           FontSize="44"
+                           TextAlignment="Center"
+                           Foreground="Silver"
+
+                           />
+                </StackPanel>
+
+            </Grid>
+            <Grid x:Name="Congradution"
+              Background="#cc000000"
+              
+              Visibility="Hidden"
+              >
+                <StackPanel HorizontalAlignment="Center"
+                          VerticalAlignment="Top">
+                    <TextBlock Text="Great !!"
+                           FontSize="58"
+                           TextAlignment="Center"
+                           Foreground="Silver"
+                           />
+                    <TextBlock x:Name="ReachGoal"
+                           Text="Score: "
+                           FontSize="44"
+                           TextAlignment="Center"
+                           Foreground="Silver"
+                           />
+
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Viewbox>
+</Window>
