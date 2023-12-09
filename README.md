@@ -19,20 +19,19 @@ A practical To-Do List project, which allows users to add, modify and complete t
 A handy tool that efficiently converts between multiple world currencies in real-time. Essential for users who deal with global currencies.
 
 #### 4. Car Game
-An addictive and thrilling remake of the famous Flappy Bird Game. Navigate your bird through the perilous tunnels and set a high score.
+An addictive and thrilling remake of the famous car Game. evade all the bombs and strive for the highest score possible.
 
 #### 5. Tic Tac Toe Game
 An exciting and classic game of Tic Tac Toe. Play against computer intelligence and test your strategic skills.
 
 #### 6. Calculator
-An addictive and thrilling remake of the famous Flappy Bird Game. Navigate your bird through the perilous tunnels and set a high score.
+An essential tool for mathematical calculations, providing users with a straightforward and efficient means to perform various computations.
 
 #### 7. Snake Game
-Immerse yourself in a new Space adventure. Avoid all the alians spaceships and break records.
+Immerse yourself in a captivating Space adventure, where the goal is to navigate and control a snake to eat the food which appears in different places at the grid and aiming to break records.
 
 #### 8. Tertris Game
-A handy tool that efficiently converts between multiple world currencies in real-time. Essential for users who deal with global currencies.
-
+Enjoy the classic Tetris Game, a timeless puzzle challenge where players arrange falling blocks to create complete lines and score points.
 
 
 
@@ -49,6 +48,6 @@ Feel free to contribute to this Game Center Project. We appreciate contributions
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, please feel free to contact me at my mail: ofekifargan3@gmail.com.
+If you have any questions, suggestions, or feedback, please feel free to contact me at my mail: sultannassar11@gmail.com.
 
-Hope you enjoy this comprehensive WPF Game Center - Happy gaming!
+Hope you enjoy this comprehensive WPF Play Center - Happy gaming!
