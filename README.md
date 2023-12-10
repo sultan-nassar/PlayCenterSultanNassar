@@ -10,10 +10,10 @@ Welcome to our comprehensive Game Center Project on Windows Presentation Foundat
 ## Included Projects in this WPF Game Center:
 
 #### 1. User Management System
-This system is responsible for the creation, handling, and management of user data within the application. It handles registration, login, logout, and user profile management.
+This system is responsible for the creation, handling, and management of user data within the application. It handles registration, login, logout, delete and user profile management.
 
 #### 2. To-Do List
-A practical To-Do List project, which allows users to add, modify and complete tasks. This tool is designed to help manage our time and tasks more effectively.
+A practical To-Do List project, which allows users to add, modify, save and complete tasks. This tool is designed to help manage our time and tasks more effectively.
 
 #### 3. Currency Converter Program
 A handy tool that efficiently converts between multiple world currencies in real-time. Essential for users who deal with global currencies.
