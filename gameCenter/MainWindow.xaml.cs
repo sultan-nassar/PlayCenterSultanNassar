@@ -278,7 +278,7 @@ namespace gameCenter
 
         private void Avatar_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("Name: Sultan Nassar\nEmail: sultannassar11@gmail.com\nPhone: 0543133603");
+            MessageBox.Show("Name: Sultan Nassar\nEmail: sultannassar11@gmail.com\nPhone: 0543133603","Contact Information");
         }
 
 
